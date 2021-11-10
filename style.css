@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+body{
+    background-image: url(restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#app-container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+        
+}
+
+.textContainer{
+    background-color: rgba(184, 172, 139, 0.7);
+    border-radius: 3px;
+
+}
+
+#description{
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+img{
+    width: 20%;
+    position: relative;
+    left: 40%;
+    right: 40%;
+}
+
+.pizza-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    
+}
+
+.pizzaList{
+    padding: 0 15px 0 15px;
+}
+
+.pizza-box p{
+    flex-basis: 50%;
+}
+
+p{
+    margin-bottom: 0.1em;
+    line-height: 1.4rem;  
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    
+}
+
+.modalBtnContainer{
+    text-align: center;
+}
+
+.openModalBtn{
+    width: 160px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.modalBackground{
+    width: 30rem;
+    height: 35rem;
+    background-color: rgb(10, 36, 83);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 35rem;
+}
+
+.greenB{
+    border: 2px solid green;
+}
+
+.redB{
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 480px){
+    .pizza-box{
+        display: block;
+    }
+
+    img{
+      width: 50%; 
+    }
+
+    .modalBackground{
+        width: 20rem;
+        height: 25rem;
+    }
+
+    .modalContainer{
+        background-color: rgb(10, 36, 83);
+        height: 25rem;
+    }
+
+    input{
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+
